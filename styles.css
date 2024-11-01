@@ -1,0 +1,58 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Fixed background container */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('plainbg.png');
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+    background-attachment: fixed; /* Keeps background fixed during scroll */
+    z-index: -1; /* Places the background behind other content */
+}
+
+/* Overlay image */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the image scales to cover the entire area */
+    z-index: 1; /* Ensures it overlays on top of the background */
+}
+
+/* Content section */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh; /* Ensures the section takes up at least one viewport height */
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Content section
+.content {
+    height: 1000px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}*/
