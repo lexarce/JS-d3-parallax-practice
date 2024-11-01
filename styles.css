@@ -1,13 +1,125 @@
-/* Basic reset */
-body, html {
+/* Custom font declarations */
+@font-face {
+    font-family: 'FiraCodeNerdMono';
+    src: url('../Fonts/FiraCodeNerdFontMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraCodeNerdMono';
+    src: url('../Fonts/FiraCodeNerdFontMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MazzardH';
+    src: url('../Fonts/mazzard-h-11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('plainbg.png');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'FiraCodeNerdMono', monospace; /* Use the custom font */
     overflow-x: hidden;
 }
 
-/* Fixed background container */
+/* Additional CSS rules */
+h1, h2 {
+    font-family: 'MazzardH', sans-serif; /* Use the MazzardH font for headings */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #703002;
+    padding: 6px 100px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 200;
+}
+
+.navigation a:hover {
+    background: #703002;
+    color: #fff
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+#titleText {
+    position: absolute;
+    font-size: 4em;
+    color: black;
+}
+
+#subtext {
+    position: absolute;
+    font-size: 1em;
+    margin-top: 120px;
+    text-align: center;
+    color: black;
+}
+
+#scrollText {
+    position: absolute;
+    font-size: 1em;
+    margin-top: 600px;
+    text-align: center;
+    color: black; 
+}
+
+#ArrowDown {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    margin-bottom: -700px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.OriginsInTheWild {
+    position: relative;
+    padding: 250px;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+/* Fixed background container 
 .background {
     position: fixed;
     top: 0;
@@ -15,10 +127,16 @@ body, html {
     width: 100vw;
     height: 100vh;
     background-image: url('plainbg.png');
-    background-size: cover; /* Cover the entire viewport */
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Keeps background fixed during scroll */
-    z-index: -1; /* Places the background behind other content */
+    background-attachment: fixed;
+    z-index: -1; 
+} */
+
+.screen {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* Overlay image */

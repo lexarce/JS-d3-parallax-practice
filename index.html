@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Parallax background layer -->
-    <div id="parallax">
-        <img src="Screen_1.png" alt="Intro Screen" class="overlay-image">
-    </div>
+    <header>
+        <nav class="navigation">
+            <a href="https://github.com/lexarce/JS-d3-parallax-practice.git">GitHub Link</a>
+        </nav>
+    </header>
 
-    <!-- Scrolling content will be generated here by JavaScript -->
-    <!--<div class="content">
-        <p>just testing stuff</p>
-    </div>-->
+    <section class="parallax">
+        <h2 id="titleText">The Evolution of Cats</h2>
+        <p id="subtext">by: Alexis Arce</p>
+        <p id="scrollText">Scroll to Continue</p>
+        <img src="arrow_down.png" id="ArrowDown">
+    </section>
 
-    <!-- Another Parallax Background -->
-    <div class="parallax"></div>
+    <section class="OriginsInTheWild">
+        <h2>Origins in the Wild</h2>
+        <br>
+        <p>
+            How did the modern cat family evolve?<br><br>
+            The cat family, <b>Felidae</b>, originated from a panther-like ancestor in Asia approximately <b>10.8 million years ago.</b>
+            Genetic evidence indicates this common ancestor evolved in Southeast Asia,
+            leading to various cat lineages that adapted to diverse habitats and developed unique characteristics.<br><br>
+            Over millions of years, these cats spread across continents due to <b>migrations</b> facilitated by land bridges formed by fluctuating sea levels.  
+        </p>
+    </section>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" defer></script>
